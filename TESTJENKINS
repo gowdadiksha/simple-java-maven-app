@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     stages {
@@ -16,5 +17,10 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        stage('Done') {
+            steps {
+                echo 'made a commit...'
+            }
+        }    
     }
 }
